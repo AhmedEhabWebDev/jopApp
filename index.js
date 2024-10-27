@@ -12,7 +12,7 @@ let port = process.env.PORT
 
 const app = express();
 
-console.log(process.env);
+
 app.use(express.json());
 
 app.use("/user", userRouter);

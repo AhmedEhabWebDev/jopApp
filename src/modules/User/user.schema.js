@@ -1,3 +1,4 @@
+import { query } from "express";
 import Joi from "joi";
 
 export const SignUpSchema = {
@@ -78,7 +79,7 @@ export const getAnotherUserSchema = {
 }
 
 export const getAllUserSchema = {
-  params: Joi.object({
+  query: Joi.object({
     recoveryEmail: Joi.string().required().email({
       minDomainSegments: 2,
       maxDomainSegments: 4,

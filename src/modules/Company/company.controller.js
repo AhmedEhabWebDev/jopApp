@@ -16,8 +16,7 @@ export const addCompany = async (req, res) => {
     industry,
     address,
     numberOfEmployees,
-    companyEmail,
-    companyHR
+    companyEmail
   } = req.body
 
   const { _id } = req.authUser;
